@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>no title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#abb2bf;background-color:#31363f !important;border:#4b5362;border-radius:3px}pre[class*="language-"]{padding:1em}code[class*="language-"] .token.comment,pre[class*="language-"] .token.comment,code[class*="language-"] .token.prolog,pre[class*="language-"] .token.prolog,code[class*="language-"] .token.doctype,pre[class*="language-"] .token.doctype,code[class*="language-"] .token.cdata,pre[class*="language-"] .token.cdata{color:#5c6370}code[class*="language-"] .namespace,pre[class*="language-"] .namespace{opacity:.7}code[class*="language-"] .token.constant,pre[class*="language-"] .token.constant{color:#d19a66}code[class*="language-"] .token.boolean,pre[class*="language-"] .token.boolean,code[class*="language-"] .token.number,pre[class*="language-"] .token.number,code[class*="language-"] .token.function-name,pre[class*="language-"] .token.function-name{color:#d19a66}code[class*="language-"] .token.tag,pre[class*="language-"] .token.tag{color:#e06c75}code[class*="language-"] .token.symbol,pre[class*="language-"] .token.symbol{color:#56b6c2}code[class*="language-"] .token.selector,pre[class*="language-"] .token.selector{color:#c678dd}code[class*="language-"] .token.attr-name,pre[class*="language-"] .token.attr-name{color:#d19a66}code[class*="language-"] .token.string,pre[class*="language-"] .token.string{color:#98c379}code[class*="language-"] .token.char,pre[class*="language-"] .token.char{color:#56b6c2}code[class*="language-"] .token.url,pre[class*="language-"] .token.url{color:#56b6c2}code[class*="language-"] .token.operator,pre[class*="language-"] .token.operator{color:#abb2bf}code[class*="language-"] .token.atrule,pre[class*="language-"] .token.atrule,code[class*="language-"] .token.attr-value,pre[class*="language-"] .token.attr-value,code[class*="language-"] .token.keyword,pre[class*="language-"] .token.keyword{color:#c678dd}code[class*="language-"] .token.function,pre[class*="language-"] .token.function{color:#61afef}code[class*="language-"] .token.class-name,pre[class*="language-"] .token.class-name{color:#e5c07b}code[class*="language-"] .token.variable,pre[class*="language-"] .token.variable{color:#d19a66}code[class*="language-"] .token.regex,pre[class*="language-"] .token.regex{color:#56b6c2}code[class*="language-"] .token.important,pre[class*="language-"] .token.important{color:#e06c75}code[class*="language-"] .token.important,pre[class*="language-"] .token.important,code[class*="language-"] .token.bold,pre[class*="language-"] .token.bold{font-weight:bold}code[class*="language-"] .token.italic,pre[class*="language-"] .token.italic{font-style:italic}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:rgba(153,122,102,0.08);background:linear-gradient(to right, rgba(153,122,102,0.1) 70%, rgba(153,122,102,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:rgba(153,122,102,0.4);color:#f5f2f0;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px white}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.emoji {
+  height: 0.8em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:hsl(220,14%,71%);background-color:hsl(220,13%,18%);overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:hsl(0,0%,100%)}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:hsl(220,14%,55%)}html body strong{color:hsl(0,0%,100%)}html body del{color:hsl(220,14%,55%)}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#56b6c2;text-decoration:none}html body a:hover{color:#74c3cd;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:hsl(220,14%,55%);background-color:hsl(220,13%,26%);border-left:4px solid hsl(220,13%,34%)}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:hsl(220,13%,34%);border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:hsl(0,0%,100%)}html body table td,html body table th{border:1px solid hsl(220,13%,34%);padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:hsl(0,0%,100%);background-color:hsl(220,13%,26%);border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:hsl(220,13%,34%);border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:hsl(0,0%,100%);border:1px solid hsl(220,13%,34%);border-bottom:2px solid hsl(220,13%,28%);padding:2px 4px;background-color:hsl(220,13%,26%);border-radius:3px}@media print{html body{background-color:hsl(220,13%,18%)}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:hsl(0,0%,100%);page-break-after:avoid}html body blockquote{color:hsl(220,14%,55%)}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}
+    /* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+    </style>
+    
+  </head>
+  <body for="html-export">
+    <div class="mume markdown-preview">
+    <html><head></head><body><div><style>
+.imgOption{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 600px; 
+}
+
+.inverse {
+    filter : invert(85%);
+}
+
+h2{
+    font-weight :bold;
+    border : 6px solid yellow;
+    color : yellow !important;
+}
+h3 {
+    font-weight :bold;
+    border : 3px solid ;
+}
+</style>
+<h2 class="mume-header" id="%EC%8A%A4%ED%83%9D%EA%B3%BC-%ED%81%90" ebook-toc-level-2 heading="&amp;#xC2A4;&amp;#xD0DD;&amp;#xACFC; &amp;#xD050;">&#xC2A4;&#xD0DD;&#xACFC; &#xD050;</h2>
+
+<h3 class="mume-header" id="%EC%8A%A4%ED%83%9D" ebook-toc-level-3 heading="&amp;#xC2A4;&amp;#xD0DD;">&#xC2A4;&#xD0DD;</h3>
+
+<img src="https://media.giphy.com/media/bN6VuVwldkTtFt2jK4/giphy.gif" width="400px">
+<h4 class="mume-header" id="%EC%8A%A4%ED%83%9D%EC%9D%98-%ED%8A%B9%EC%A7%95" ebook-toc-level-4 heading="&amp;#x2757; &amp;#xC2A4;&amp;#xD0DD;&amp;#xC758; &amp;#xD2B9;&amp;#xC9D5;">&#x2757; &#xC2A4;&#xD0DD;&#xC758; &#xD2B9;&#xC9D5;</h4>
+
+<h5 class="mume-header" id="%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0" ebook-toc-level-5 heading="&amp;#x1F449;  &amp;#xC790;&amp;#xB8CC;&amp;#xAD6C;&amp;#xC870;">&#x1F449;  &#xC790;&#xB8CC;&#xAD6C;&#xC870;</h5>
+
+<ul>
+<li>LIFO (&#xD6C4;&#xC785;&#xC120;&#xCD9C;)</li>
+</ul>
+<h5 class="mume-header" id="%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90-%EC%98%AC%EB%9D%BC%EA%B0%84-%EA%B5%AC%EC%A1%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0" ebook-toc-level-5 heading="&amp;#x1F449; &amp;#xBA54;&amp;#xBAA8;&amp;#xB9AC;&amp;#xC5D0; &amp;#xC62C;&amp;#xB77C;&amp;#xAC04; &amp;#xAD6C;&amp;#xC870; &amp;#xD504;&amp;#xB85C;&amp;#xC138;&amp;#xC2A4; &amp;#xBA54;&amp;#xBAA8;&amp;#xB9AC; &amp;#xAD6C;&amp;#xC870;">&#x1F449; &#xBA54;&#xBAA8;&#xB9AC;&#xC5D0; &#xC62C;&#xB77C;&#xAC04; &#xAD6C;&#xC870; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xBA54;&#xBAA8;&#xB9AC; &#xAD6C;&#xC870;</h5>
+
+<ul>
+<li>&#xCF54;&#xB370;&#xD799;&#xC2A4;
+<ol>
+<li>&#xCF54;&#xB4DC; &#xC601;&#xC5ED;
+<ul>
+<li>&#xCEF4;&#xD30C;&#xC77C;&#xD6C4; &#xC0DD;&#xC131;&#xB41C; &#xAE30;&#xACC4;&#xC5B4;</li>
+<li>CPU&#xAC00; &#xAE30;&#xACC4; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xAC00;&#xC838;&#xC62C;&#xB54C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC601;&#xC5ED;</li>
+<li>&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC885;&#xB8CC;&#xD6C4;&#xC5D0;&#xB3C4; &#xB0A8;&#xC544;&#xC788;&#xC74C;</li>
+</ul>
+</li>
+<li>&#xB370;&#xC774;&#xD130; &#xC601;&#xC5ED;
+<ul>
+<li>&#xC804;&#xC5ED;&#xBCC0;&#xC218; &#xC815;&#xC801;&#xBCC0;&#xC218;</li>
+<li>&#xCEF4;&#xD30C;&#xC77C;&#xD6C4; &#xD560;&#xB2F9;&#xB428;</li>
+<li>&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC885;&#xB8CC;&#xD6C4;&#xC5D0; &#xAC19;&#xC774; &#xC0AD;&#xC81C;</li>
+</ul>
+</li>
+<li>&#xD799; &#xC601;&#xC5ED;
+<ul>
+<li>&#xB3D9;&#xC801;&#xD560;&#xB2F9;&#xB41C; &#xBA54;&#xBAA8;&#xB9AC; &#xC601;&#xC5ED;</li>
+<li>new delete, malloc free</li>
+<li>&#xCEF4;&#xD30C;&#xC77C;&#xC911;&#xC5D0; &#xD560;&#xB2F9;</li>
+<li>&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC885;&#xB8CC;&#xD6C4;&#xC5D0; &#xAC19;&#xC774; &#xC0AD;&#xC81C;</li>
+</ul>
+</li>
+<li><strong>&#xC2A4;&#xD0DD; &#xC601;&#xC5ED;</strong>
+<ul>
+<li>&#xD568;&#xC218;, &#xC9C0;&#xC5ED;&#xBCC0;&#xC218;, &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;</li>
+<li>&#xC2A4;&#xD0DD; &#xD504;&#xB808;&#xC784;&#xC774;&#xB77C;&#xACE0; &#xD568;&#xC218;&#xC758; &#xD638;&#xCD9C; &#xC815;&#xBCF4;&#xB97C; &#xC2A4;&#xD0DD;&#xCC98;&#xB7FC; &#xC313;&#xB3C4;&#xB85D; &#xB3D9;&#xC791;&#xD558;&#xB294; &#xAD6C;&#xC870;</li>
+<li>&#xCEF4;&#xD30C;&#xC77C;&#xC911;&#xC5D0; &#xD560;&#xB2F9;</li>
+<li>&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC885;&#xB8CC;&#xD6C4;&#xC5D0; &#xAC19;&#xC774; &#xC0AD;&#xC81C;</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h5 class="mume-header" id="%EB%AF%B8%EB%A1%9C%EC%B0%BE%EA%B8%B0" ebook-toc-level-5 heading="&amp;#x1F449; &amp;#xBBF8;&amp;#xB85C;&amp;#xCC3E;&amp;#xAE30;">&#x1F449; &#xBBF8;&#xB85C;&#xCC3E;&#xAE30;</h5>
+
+<ul>
+<li>
+<p><strong>&#xADF8;&#xB798;&#xD504;&#xD0D0;&#xC0C9;</strong></p>
+<ul>
+<li>DFS&#xB294; &#xBCF4;&#xD1B5; &#xC7AC;&#xADC0;&#xB85C; &#xD574;&#xACB0;&#xD558;&#xAE30;&#xB3C4; &#xD558;&#xC9C0;&#xB9CC; &#xC2A4;&#xD0DD;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C;&#xB3C4; DFS&#xB97C; &#xC9C4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>&#xCF54;&#xB4DC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xB2E4;<br>
+<strong><a href="file:///D:\&#xAC15;&#xC758;\&#xB9C8;&#xD06C;&#xB2E4;&#xC6B4;\&#xAC1C;&#xC778;&#xACF5;&#xBD80;\&#xC790;&#xB8CC;&#xAD6C;&#xC870;\&#xB178;&#xD2B8;&#xB4E4;\%EC%8A%A4%ED%85%8D%EB%AF%B8%EB%A1%9C%EC%B0%BE%EA%B8%B0.cpp">&#xBBF8;&#xB85C;&#xCC3E;&#xAE30; &#xCF54;&#xB4DC;</a></strong></li>
+</ul>
+</li>
+<li>
+<p><strong>&#xC778;&#xD48B;</strong></p>
+<ul>
+<li>&#xB2E4;&#xC74C; &#xC778;&#xD48B; &#xACB0;&#xACFC;&#xAC12;&#xC774; 1&#xC774;&#xBA74; &#xC798; &#xC791;&#xB3D9;&#xD55C;&#xAC83;&#xC774;&#xB2E4;..(&#xC544;&#xB9C8;&#xB3C4;)<pre data-role="codeBlock" data-info class="language-"><code>10 
+
+1 1 1 1 1 1 1 1 1 1
+0 0 0 0 1 0 0 0 0 1
+1 0 0 0 1 0 0 1 0 1
+1 0 1 1 1 0 0 1 0 1
+1 0 0 0 1 0 0 1 0 1
+1 0 1 0 1 0 0 1 0 1
+1 0 1 0 1 0 0 1 0 1
+1 0 1 0 1 0 0 1 0 1
+1 0 1 0 0 0 0 1 0 0
+1 1 1 1 1 1 1 1 1 1
+
+0 1 9 8
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>&#xC791;&#xB3D9; &#xC560;&#xB2C8;</strong></p>
+<ul>
+<li>
+<img src="https://media.giphy.com/media/teXhRBVD5HYioTw4Bo/giphy.gif">
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="%ED%81%90" ebook-toc-level-3 heading="&amp;#xD050;">&#xD050;</h3>
+
+<h4 class="mume-header" id="%ED%81%90%EC%9D%98-%ED%8A%B9%EC%A7%95" ebook-toc-level-4 heading="&amp;#x2757; &amp;#xD050;&amp;#xC758; &amp;#xD2B9;&amp;#xC9D5;">&#x2757; &#xD050;&#xC758; &#xD2B9;&#xC9D5;</h4>
+
+<h5 class="mume-header" id="%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-1" ebook-toc-level-5 heading="&amp;#x1F449;  &amp;#xC790;&amp;#xB8CC;&amp;#xAD6C;&amp;#xC870;">&#x1F449;  &#xC790;&#xB8CC;&#xAD6C;&#xC870;</h5>
+
+<img src="https://media.giphy.com/media/ZQsRnt6X8y9S8wP8rN/giphy.gif" width="400px">
+<ul>
+<li>FIFO (&#xC120;&#xC785; &#xC120;&#xCD9C;)</li>
+</ul>
+<h5 class="mume-header" id="os-cpu-%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81" ebook-toc-level-5 heading="&amp;#x1F449; OS CPU &amp;#xC2A4;&amp;#xCF00;&amp;#xC974;&amp;#xB9C1;">&#x1F449; OS CPU &#xC2A4;&#xCF00;&#xC974;&#xB9C1;</h5>
+
+<p>&#xB2E4;&#xC74C; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xB294;&#xB370; &#xC788;&#xC5B4;</p>
+<ol>
+<li>linked lsit || binary tree</li>
+<li>FIFO queue</li>
+<li>Priority Queue</li>
+</ol>
+<pre data-role="codeBlock" data-info class="language-"><code>1. PCB(&#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC81C;&#xC5B4;&#xBE14;&#xB85D;) &#xC758; &#xAD6C;&#xC131;&#xC694;&#xC18C; [3. &#xD504;&#xB85C;&#xC138;&#xC2A4;]
+	1. process state
+		1. new, ready, running, waiting, teminated
+		&#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC0C1;&#xD0DC; &#xC804;&#xC774;&#xB3C4;
+		
+			ready to run : dispatch 
+			run to ready : time limit preemption
+			wait to ready : &#xC6B0;&#xC120;&#xC21C;&#xC704; preemption
+			run to wait : non-preemptive
+			run to end : non-preemptive
+_-------------------------------------------
+
+2. &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xAD6C;&#xC131;	[3. &#xD504;&#xB85C;&#xC138;&#xC2A4;]
+	1. text 
+		&#xC2E4;&#xD589;&#xCF54;&#xB4DC;
+	2. data
+		&#xC804;&#xC5ED; &#xBCC0;&#xC218;
+	3. heap
+		&#xC9C0;&#xC5ED;, &#xB3D9;&#xC801;, malloc, new
+	4. stack
+		&#xC9C0;&#xC5ED;, &#xD568;&#xC218;, &#xB9E4;&#xAC1C;
+		
+_-------------------------------------------
+
+3. SMP&#xC5D0;&#xC11C;&#xC758; &#xB300;&#xAE30;&#xD050;&#xB97C; &#xCC98;&#xB9AC;&#xD558;&#xB294; 2&#xAC00;&#xC9C0; &#xBC29;&#xBC95; [5. &#xC2A4;&#xCF00;&#xC974;&#xB9C1;]
+	CPU&#xC2A4;&#xCF00;&#xC974;&#xB9C1;&#xC758; &#xAC1C;&#xC694;
+		&#xBA40;&#xD2F0; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC758; &#xAE30;&#xBCF8;&#xC774;&#xB77C; &#xD560; &#xC218; &#xC788;&#xB2E4;.
+		CPU&#xB97C; &#xCD5C;&#xB300;&#xD55C; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; 
+		ready Queue &#xC801;&#xC808;&#xD788; &#xC2E4;&#xD589;&#xD558;&#xB294; &#xBC29;&#xBC95;
+	
+	&#xC2A4;&#xCF00;&#xC974;&#xB9C1; &#xB2E8;&#xACC4;
+		1. long-term
+			job&#xC2A4;&#xCF00;&#xC974;&#xB9C1; &#xACB0;&#xC815;
+			new to ready state
+			load a process into memory
+		2. mid-term
+			swap out swap in process
+		3. short-term	
+			&#xC778;&#xD130;&#xB7FD;&#xD2B8;, &#xD0C0;&#xC784;&#xC544;&#xC6C3;, &#xB514;&#xC2A4;&#xD328;&#xCCD0;, CPU&#xC2A4;&#xCF00;&#xC974;&#xB9C1;
+			I/O &#xBE14;&#xB85D;, 
+			select a process to run on CPU
+			
+	CPU&#xC5D0; &#xACE0;&#xB824;&#xD574;&#xC57C;&#xD560;&#xC810;&#xC740;
+		ready queue &#xC911;&#xC5D0;&#xC11C;
+		&#xC5B4;&#xB5A4;&#xAC78; &#xC120;&#xD0DD;&#xD574;&#xC11C; &#xC2E4;&#xD589;&#xD574;&#xC57C;&#xD558;&#xB294;&#xAC00;?
+		
+		case 
+			------------------------
+			1. preemptive
+				&#xAC15;&#xC81C;&#xB85C; &#xCAD2;&#xC544;&#xB0BC;&#xC218;&#xC788;&#xC74C;
+				
+				&gt; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC0C1;&#xD0DC;
+				- 2. running -&gt; ready(&#xC778;&#xD130;&#xB7FD;&#xD2B8; &#xBC1C;&#xC0DD;) -&gt; timeout
+				- 3. waiting -&gt; ready(&#xC778;&#xD130;&#xB7FD;&#xD2B8; &#xBC1C;&#xC0DD;) -&gt; &#xB192;&#xC740; &#xC6B0;&#xC120;&#xC21C;&#xC704;
+				
+				&#xC7A5;&#xC810; : 
+					1.interactive system
+					3.real-time tasks
+					2.Good for handling 
+				&#xB2E8;&#xC810; : 
+					1. &#xB3D9;&#xAE30;&#xD654; &#xBB38;&#xC81C;&#xAC00; &#xBCF5;&#xC7A1;.
+					2. Number of context switches increase.
+		
+			------------------------
+			2. none-preemptive
+				&#xCAD2;&#xC544;&#xB0BC; &#xC218; &#xC5C6;&#xC74C;
+				switcing&#xC774; &#xBD88;&#xAC00;&#xB2A5;
+				
+				&gt; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC0C1;&#xD0DC;
+				- 1. running -&gt; waiting
+				- 4. teminated
+				
+				&#xC7A5;&#xC810; : 
+					1. Scheduling overhead is smaller.
+					2. Number of context switches decrease.
+					3. Synchronization among processes becomes easier.
+				&#xB2E8;&#xC810; :
+					interactive system
+					bad for handling 
+					none real-time tasks
+			------------------------
+			
+	Dispatcher
+		context switching&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xB3C4;&#xB85D; &#xD658;&#xACBD;&#xC744; &#xB9CC;&#xB4E6;
+		Dispatch latency 
+			= context switching delay
+		
+		latency&#xAC00; &#xC9E7;&#xC744; &#xC218;&#xB85D; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xD6A8;&#xC728;&#xC131;&#xC740; &#xBE60;&#xB974;&#xB2E4;.
+	
+	&#xC774;&#xC81C; &#xC54C;&#xACE0;&#xB9AC;&#xC998;...
+	
+	
+	SMP(&#xBA40;&#xD2F0; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC2A4;&#xCF00;&#xC974;&#xB9C1;) 5.11
+		&#xB300;&#xAE30;&#xC5F4;&#xC744; &#xB9CC;&#xB4DC;&#xB294; &#xBC29;&#xBC95;(read queue) 
+		&#xB450;&#xAC00;&#xC9C0;&#xB85C; &#xB098;&#xB20C;&#xC218; &#xC788;&#xB2E4;
+			1. common ready queue	
+				&#xD558;&#xB098;&#xC758; ready queue&#xB97C; &#xD558;&#xB098;&#xC758; CPU&#xC11C; &#xCC98;&#xB9AC;
+				&#xC7A5;&#xC810; : 	1.&#xBD84;&#xBC30;&#xD560; &#xD544;&#xC694;&#xC5C6;&#xC774; &#xCB49;~ load balance&#xAC00; X
+						2.&#xC2A4;&#xCF00;&#xC974;&#xB9C1; &#xC624;&#xBC84;&#xD5E4;&#xB4DC;&#xAC00; &#xB354; &#xC791;&#xC544;&#xC9D0;
+						3. A process is guarateed to be run on the same CPU.						
+						
+				&#xB2E8;&#xC810; :	&#xD558;&#xB098;&#xC758; ready queue&#xB97C; &#xC4F0;&#xB2E4;&#xBCF4;&#xB2C8; &#xCE90;&#xC2DC; hit ratio &#xAC10;&#xC18C;
+						&#xBCD1;&#xBAA9;&#xD604;&#xC0C1; &#xAC00;&#xB2A5;&#xC131;
+				
+			2. pre-core run queue (Each processor may have its own private queue of threads.)
+				&#xD558;&#xB098;&#xC758; ready queue&#xB97C; &#xACF5;&#xC720;&#xD574;&#xC11C; &#xCC98;&#xB9AC;
+					&#xC791;&#xC5C5;&#xC774; &#xC0C8;&#xB85C; &#xC0DD;&#xAE30;&#xBA74;(new). &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xAC00;
+					queue &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xC801;&#xC808;&#xD788; &#xBD84;&#xD574;&#xD558;&#xB294; &#xBC29;&#xC2DD;
+				
+				&#xC7A5;&#xC810; : &#xCE90;&#xC2DC; hit &#xC131;&#xB2A5;&#xC774; &#xC88B;&#xC74C;
+				&#xB2E8;&#xC810; : load unbalanced&#xAC00; &#xBC1C;&#xC0DD;
+					&#xC989; ,&#xD55C;&#xCABD;&#xC774; &#xB05D;&#xB098;&#xBA74; &#xB178;&#xB294; CPU&#xAC00; &#xC0DD;&#xAE34;&#xB2E4;.
+					
+					&#xD574;&#xACB0;&#xCC45; : &#xC791;&#xC5C5;&#xC774; &#xC5C6;&#xB294;&#xC0AC;&#xB78C;&#xC5D0;&#xAC8C; &#xC77C;&#xBD80; &#xC62E;&#xACA8;&#xC90C;
+						process migration
+							PULL&#xB0B4;&#xBCF4;&#xB0B4; &amp; PUSH&#xAC16;&#xACE0;&#xAC00; &#xBC29;&#xBC95;&#xC744; &#xB3D9;&#xC2DC;&#xC5D0; &#xC0AC;&#xC6A9;
+
+	
+_-------------------------------------------
+
+6. &#xC2A4;&#xCF00;&#xC974;&#xB9C1; &#xC54C;&#xACE0;&#xB9AC;&#xC998; [5. &#xC2A4;&#xCF00;&#xC974;&#xB9C1;]
+	&#xC54C;&#xACE0;&#xB9AC;&#xC998; &#xC120;&#xD0DD;&#xAE30;&#xC900;
+		1. CPU utilization
+			&#xC815;&#xD574;&#xC9C4; &#xC2DC;&#xAC04;&#xB3D9;&#xC548; &#xC720;&#xC6A9;&#xD55C;&#xC791;&#xC5C5;&#xC744;&#xD55C; &#xD6A8;&#xC728;
+		2. Throughput : 
+			waiting + service
+		3. waiting time : 
+			&#xD558;&#xB098;&#xC758; process&#xAC00; ready queue&#xC5D0;&#xC11C; &#xAE30;&#xB2E4;&#xB9AC;&#xB294; &#xC2DC;&#xAC04;
+		4. turnaround time&#xACFC; waiting time
+			&#xBC18;&#xD658;&#xC2DC;&#xAC04;&#xACFC; &#xC900;&#xBE44;&#xC644;&#xB8CC;&#xD050; &#xB300;&#xAE30; &#xC2DC;&#xAC04;&#xC740; &#xCD5C;&#xC18C;&#xD654;
+		5. Response time : 
+			ready queue&#xC5D0; &#xB4E4;&#xC5B4;&#xAC00;&#xC11C; &#xBC18;&#xC751;&#xC774; &#xB098;&#xC624;&#xAE30;&#xAE4C;&#xC9C0; &#xAC78;&#xB9B0;&#xC2DC;&#xAC04;.
+			
+	&#xC131;&#xB2A5;&#xBD84;&#xC11D;&#xC744; &#xD558;&#xB294; &#xBAA9;&#xC801;
+		1. &#xC120;&#xC810;&#xD3C9;&#xAC00; : selection evaluation
+			&#xACE0;&#xAC1D;&#xC785;&#xC7A5;
+		2. &#xC131;&#xB2A5;&#xC608;&#xCE21; : 
+			&#xAC1C;&#xBC1C;&#xC790;&#xC785;&#xC7A5;
+		3. &#xC131;&#xB2A5; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1; :
+			&#xC6D0;&#xD558;&#xB294; &#xC131;&#xB2A5;&#xC774; &#xB098;&#xC624;&#xB294;&#xC9C0; &#xACC4;&#xC18D; &#xAC10;&#xC2DC;
+			&#xC6B4;&#xC601;&#xC790;&#xC785;&#xC7A5;
+			
+	&#xC54C;&#xACE0;&#xB9AC;&#xC998; 
+		1. FCFS (first com first serced)
+			&#xB4E4;&#xC5B4;&#xC628; &#xC21C;&#xC11C;&#xB300;&#xB85C;
+			
+			&#xC7A5;&#xC810; 	
+				1. non-preemptive
+			&#xB2E8;&#xC810; 	
+				1. non-preemptive
+				2. Convey effect
+					cpu&#xC591;&#xBCF4; &#xC804;&#xAE4C;&#xC9C0;&#xB294; &#xBAA8;&#xB450; &#xB300;&#xAE30;
+		
+		2. SJF
+			&#xC11C;&#xBE44;&#xC2A4;&#xC2DC;&#xAC04; &#xC9E7;&#xC740;&#xAC70;&#xBD80;&#xD130;
+			
+			&#xC7A5;&#xC810; 	
+				1.non-preemptive
+				2. It gives an advantage for shorter job
+				3. It gives the minimum average waiting time.
+			&#xB2E8;&#xC810;	
+				1.non-preemptive
+				2. &#xBD88;&#xACF5;&#xD3C9;&#xD55C; &#xC2A4;&#xCF00;&#xC974;&#xB9C1;
+				3. &#xB2E4;&#xC74C;&#xAC83;&#xC774; &#xC5BC;&#xB9C8;&#xB098; &#xAC78;&#xB9AC;&#xB294;&#xC9C0; &#xC54C;&#xAE30; &#xD798;&#xB4EC;
+				It requires execution time estimation of processes.
+				4. &#xAE34; &#xC11C;&#xBE44;&#xC2A4;&#xB294; &#xACC4;&#xC18D; &#xBC00;&#xB9B0;&#xB2E4;.
+				
+		3. SRTF
+			&#xC11C;&#xBE44;&#xC2A4;&#xC2DC;&#xAC04; &#xC9E7;&#xC740;&#xAC70;&#xBD80;&#xD130;
+			
+			&#xC7A5;&#xC810; 
+				1. preemptive
+				2. It gives an advantage for shorter job
+				3. It gives the minimum average waiting time.
+
+			&#xB2E8;&#xC810; 
+				1. preemptive
+				2. It requires execution time estimation of processes.
+
+			
+		4. RR
+			&#xC7A5;&#xC810;
+				1. FCFS
+				2. Fair for ALL 
+				3. &#xC6B0;&#xC120;&#xC21C;&#xC704; &#xB192;&#xC740;&#xC21C;
+				4. &#xC778;&#xD130;&#xB809;&#xD2F0;&#xBE0C;&#xD55C; &#xC791;&#xC5C5; &#xCC98;&#xB9AC;&#xAC00; &#xC88B;&#xC74C;
+			&#xB2E8;&#xC810;
+				1. &#xC624;&#xBC84;&#xD5E4;&#xB4DC; &#xD07C;
+				2. &#xD0C0;&#xC784;&#xD000;&#xD140;&#xC5D0; &#xB530;&#xB77C; &#xD37C;&#xD3EC;&#xBA3C;&#xC2A4;&#xAC00; &#xAC08;&#xB9B0;&#xB2E4;
+				
+		5. &#xC6B0;&#xC120;&#xC21C;&#xC704; &#xC2A4;&#xCF00;&#xB4C8;&#xB9C1;
+			&#xC6B0;&#xC120;&#xC21C;&#xC704;&#xAC00; &#xB192;&#xC740; &#xC21C;&#xC11C;&#xB300;&#xB85C;
+			&#xB3D9;&#xC77C;&#xD558;&#xB2E4;&#xBA74; FCFS
+			
+			static, dynamic
+			
+			&#xB2E8;&#xC810; 
+				1. 	&#xC0C8;&#xCE58;&#xAE30; &#xB2F9;&#xD558;&#xAE30; starvation
+					&#xB0AE;&#xC740; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB294; &#xC601;&#xC6D0;&#xD788; &#xBC00;&#xB9AC;&#xAC8C;&#xB41C;&#xB2E4;.
+						&#xD574;&#xACB0;&#xCC45; : Aging
+							&#xCC28;&#xADFC;&#xCC28;&#xADFC;&#xD788; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB97C; &#xB192;&#xC5EC;&#xC900;&#xB2E4;.
+
+</code></pre></div></body></html>
+    </div>
+  </body>
+</html>
